@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+
+    <record id="action_horses_home" model="ir.actions.act_window">
+        <field name="name">Home horse</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">horse.details</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first home</p>
+        </field>
+    </record>
+
+<menuitem id="menu_home"
+              name="Home"
+              action="action_horses_home"
+              parent="menu_home_master"
+              sequence="0"/>
+
+
+
+</odoo>
